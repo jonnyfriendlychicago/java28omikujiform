@@ -27,6 +27,17 @@
 	<a href= "/dojos">Dojos</a>
 	<!-- <a href= "/counter">Site Visit Counter</a> -->
 	
+	<form action='/login' method='GET'>
+		<label>Email:</label>
+    	<input type="text" name='email'>
+		
+		<label>Password:</label>
+    	<input type='text' name='password'>
+    	
+    	<input type='submit' value='login'>
+    </form>
+	
+	
 	<p>Count of index visits: <c:out value="${countToShow}"></c:out></p>
 	
 	<p><a href="/reset-counter/">Reset counter to zero</a></p>
