@@ -27,14 +27,35 @@
 	<a href= "/dojos">Dojos</a>
 	<!-- <a href= "/counter">Site Visit Counter</a> -->
 	
-	<form action='/login' method='GET'>
-		<label>Email:</label>
-    	<input type="text" name='email'>
-		
-		<label>Password:</label>
-    	<input type='text' name='password'>
-    	
-    	<input type='submit' value='login'>
+	<h2>Send an Omikuji!</h2>
+	<form action='processLogin' method='post'>
+		<div>
+			<label>Pick any number from 5 to 25:</label>
+    		<input type="text" name='elNumero'>
+		</div>
+		<div>
+			<label>Enter the name of any city:</label>
+    		<input type='text' name='city'>
+    	</div>
+    	<div>
+			<label>Enter the name of a real person :</label>
+    		<input type='text' name='person'>
+    	</div>
+    	<div>
+			<label>Enter profession or hobby:</label>
+    		<input type='text' name='profHobb'>
+    	</div>
+    	<div>
+			<label>Enter any type of living animal:</label>
+    		<input type='text' name='animal'>
+    	</div>
+    	<div>
+			<label>Say something nice, ya jerk:</label>
+    		<input type='text' name='nicety'>
+    	</div>
+    	<div>
+    		<input type='submit' value='send'>
+    	</div>
     </form>
 	
 	
